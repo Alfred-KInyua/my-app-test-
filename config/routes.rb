@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  get 'welcome/home', to: 'welcome#home'
-  get 'about/index', to: 'about#index'
+  root 'welcome#home'
+  get 'index', to: 'about#index'
+  get 'contact/reach', to: 'contact#reach'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
