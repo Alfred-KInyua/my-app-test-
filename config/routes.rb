@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :articles
   root 'welcome#home'
   get 'index', to: 'about#index'
   get 'contact/reach', to: 'contact#reach'
